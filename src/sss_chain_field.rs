@@ -24,7 +24,7 @@ pub const MODULUS: FieldStorage = 2147483647;
 pub const MODULUS: FieldStorage = 2305843009213693951;
 
 /// A transparent wrapper representing an element of the finite field Z_p.
-#[derive(Clone, Copy, Debug, Default, Zeroize)]
+#[derive(Clone, Copy, Debug, Default, Zeroize, PartialEq, Eq)]
 pub struct FieldElement(pub FieldStorage);
 
 impl FieldElement {
