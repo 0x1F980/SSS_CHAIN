@@ -70,3 +70,31 @@ dependencies = [
  "quote",
  "syn",
 ]
+
+[[patch.unused]]
+name = "its_otm_public_attestation"
+version = "0.1.0"
+
+[[patch.unused]]
+name = "its_routing"
+version = "0.1.0"
+
+[[patch.unused]]
+name = "its_transport"
+version = "0.1.0"
+
+[[patch.unused]]
+name = "its_ledger"
+version = "0.1.0"
+
+[[patch.unused]]
+name = "its_fingerprint_erasure"
+version = "0.8.1"
+
+[[patch.unused]]
+name = "its_self_enclosed_timelock"
+version = "0.1.0"
+
+[[patch.unused]]
+name = "its_hardware"
+version = "0.1.0"
