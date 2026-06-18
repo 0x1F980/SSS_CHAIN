@@ -50,4 +50,4 @@ There is **no** `ExactChainBytes` policy. Root is normalized to `link_byte_len` 
 | ITS-timelock | field, `sss_chain_transition` |
 | ITS-session (future) | link API |
 
-Ecosystem master: [ITS_SECURITY_LAYERS.md](https://github.com/0x1F464/ITS/blob/master/ITS_SECURITY_LAYERS.md)
+Ecosystem master: [ITS_SECURITY_LAYERS.md](https://github.com/0x1F980/ITS-ROUTING/blob/master/ITS_ECOSYSTEM.md)

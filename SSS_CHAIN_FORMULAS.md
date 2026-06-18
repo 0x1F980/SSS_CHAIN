@@ -14,4 +14,4 @@ Link count from memory: `link_count = total_bytes / link_byte_len`.
 
 CLI wire: `.ssc` text — see [SSS_CHAIN_manual.md](SSS_CHAIN_manual.md).
 
-Timelock cross-ref: [ITS-self_enclosed_timelock_FORMULAS.md](https://github.com/0x1F464/ITS-self_enclosed_timelock/blob/master/ITS-self_enclosed_timelock_FORMULAS.md) — replace inline `transitions` with `sss_chain_transition`.
+Timelock cross-ref: [ITS-self_enclosed_timelock_FORMULAS.md](https://github.com/0x1F980/ITS-self_enclosed_timelock/blob/master/ITS-self_enclosed_timelock_FORMULAS.md) — replace inline `transitions` with `sss_chain_transition`.

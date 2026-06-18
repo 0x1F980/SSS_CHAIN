@@ -21,7 +21,7 @@ sss_chain arrange --root /secure/root.bin --in shuffled.ssc --out ordered.ssc
 
 ## 2. ITS-OTM (library consumer)
 
-OTM uses `sss_chain` for field, polynomial, Lagrange, and `combine_sss_chains` — not the link `.ssc` format. See [ITS-OTM_public_attestation](https://github.com/0x1F464/ITS-OTM_public_attestation).
+OTM uses `sss_chain` for field, polynomial, Lagrange, and `combine_sss_chains` — not the link `.ssc` format. See [ITS-OTM_public_attestation](https://github.com/0x1F980/ITS-OTM_public_attestation).
 
 ```toml
 sss_chain = { git = "...", branch = "main" }

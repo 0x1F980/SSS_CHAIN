@@ -65,9 +65,9 @@ sss_chain demo
 | Repository | Role |
 |---|---|
 | **SSS_CHAIN** (this repo) | Shared SSS chain + field + epoch |
-| [ITS-OTM_public_attestation](https://github.com/0x1F464/ITS-OTM_public_attestation) | WC-MAC public attestation |
-| [ITS-self_enclosed_timelock](https://github.com/0x1F464/ITS-self_enclosed_timelock) | Time-lock puzzle |
-| [ITS-routing / ROUTING](https://github.com/0x1F464/ITS-routing) | Orchestration CLI |
+| [ITS-OTM_public_attestation](https://github.com/0x1F980/ITS-OTM_public_attestation) | WC-MAC public attestation |
+| [ITS-self_enclosed_timelock](https://github.com/0x1F980/ITS-self_enclosed_timelock) | Time-lock puzzle |
+| [ITS-routing / ROUTING](https://github.com/0x1F980/ITS-ROUTING) | Orchestration CLI |
 
 ---
 
