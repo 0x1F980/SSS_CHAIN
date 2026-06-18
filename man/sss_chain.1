@@ -1,0 +1,127 @@
+.TH SSS_CHAIN 1 "June 2026" "v0.1.0" "SSS_CHAIN Security Reference"
+.SH NAME
+sss_chain \- SSS-chaining link generation, validation, and arrangement CLI
+.SH SYNOPSIS
+.B sss_chain
+.I COMMAND
+[\fIOPTIONS\fR]
+.SH DESCRIPTION
+.B sss_chain
+is a standalone command-line tool for the
+.BR sss_chain
+Rust crate: forward-only Shamir-style chained links over \( Z_{2^31-1} \)
+(default M31 field). Layer 1 provides information-theoretic backward
+underdetermination; root secrecy (Layer 2) depends on operator-chosen root
+material (not chain length).
+.PP
+Chains are exchanged in the text
+.B .ssc
+format (pipe-friendly). Path arguments may be
+.B -
+for stdin or stdout.
+.SH COMMANDS
+.TP
+.B generate
+Build a chain from
+.BR --root
+and write
+.B .ssc
+to
+.BR --out .
+.TP
+.B validate
+Verify a
+.B .ssc
+file against
+.BR --root .
+Exit 0 prints VALID; exit 1 on failure.
+.TP
+.B arrange
+Sort shuffled links (indices 0..n-1), validate pairs, write sorted
+.BR .ssc .
+.TP
+.B depth
+Check link at
+.BR --index
+against link index-1; print depth on success.
+.TP
+.B demo
+Write a deterministic four-link demo chain.
+.SH OPTIONS
+.TP
+.BI \-\-root " PATH"
+Root passphrase or secret bytes. Default
+.B -
+(read stdin) for
+.BR generate .
+.TP
+.BI \-\-link-byte-len " N"
+Bytes per link (minimum 8). Default 16.
+.TP
+.BI \-\-link-count " N"
+Number of links (mutually exclusive with
+.BR \-\-total-bytes ).
+.TP
+.BI \-\-total-bytes " N"
+Total chain memory; must be divisible by
+.BR \-\-link-byte-len .
+.TP
+.BI \-\-in " PATH"
+Input
+.B .ssc
+file or
+.B -
+.TP
+.BI \-\-out " PATH"
+Output path or
+.B -
+(default stdout).
+.TP
+.BI \-\-index " N"
+Link index for
+.B depth
+(\( N \>= 1 \)).
+.TP
+.B \-\-quiet
+Status on stderr only; validate suppresses VALID on stdout.
+.TP
+.B \-h ", " \-\-help ", " help
+Show usage.
+.SH EXAMPLES
+Generate ten links from stdin root:
+.PP
+.RS
+echo -n "my-secret" | sss_chain generate --root - --link-count 10 --out chain.ssc
+.RE
+.PP
+Validate:
+.PP
+.RS
+sss_chain validate --root secret.txt --in chain.ssc
+.RE
+.PP
+Pipe arrange:
+.PP
+.RS
+cat chain.ssc | sss_chain arrange --root secret.txt --in - --out -
+.RE
+.SH EXIT STATUS
+.TP
+.B 0
+Success or VALID chain.
+.TP
+.B 1
+Invalid chain or operation error.
+.TP
+.B 2
+Usage error.
+.SH FILES
+.I *.ssc
+.RS
+Text chain format: header (link_byte_len, link_count) and hex-encoded links.
+.RE
+.SH SEE ALSO
+.BR ITS\-OTM_public_attestation (7),
+.BR ITS\-self_enclosed_timelock (7)
+.SH AUTHORS
+0x1F980 / ITS ecosystem.

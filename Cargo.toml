@@ -1,0 +1,18 @@
+[package]
+name = "sss_chain"
+version = "0.1.0"
+edition = "2021"
+description = "Minimal SSS-chaining link API (k=2) for ITS-OTM, ITS-timelock, and related crates"
+license = "GPL-3.0-only"
+
+[[bin]]
+name = "sss_chain"
+path = "src/bin/sss_chain.rs"
+
+[dependencies]
+subtle = { version = "2.5.0", default-features = false }
+zeroize = { version = "1.7.0", default-features = false, features = ["derive", "alloc"] }
+
+[features]
+default = []
+m61 = []
