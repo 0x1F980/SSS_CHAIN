@@ -3,6 +3,8 @@
 ## License: GNU GPLv3 Only
 ## Target: Cryptographers, Security Auditors, Integrators
 
+**ITS = Information-Theoretic Secrecy** — [ecosystem definition](https://github.com/0x1F980/ITS-ROUTING/blob/master/ITS_ECOSYSTEM.md#its--information-theoretic-secrecy). SSS_CHAIN is the shared algebra underlying ITS wire, OTM, and timelock layers.
+
 **Read first:** **[SSS_CHAIN_SECURITY_LAYERS.md](SSS_CHAIN_SECURITY_LAYERS.md)** — Layer 1 ITS backward ambiguity vs Layer 2 root secrecy.
 
 Minimal `#![no_std]` Rust crate for **SSS-chaining** link generation, validation, and arrangement (`k=2`). Shared field/epoch/OTM primitives for ITS-OTM, ITS-timelock, and future ITS-session.
@@ -78,7 +80,7 @@ echo -n "my-secret" | sss_chain generate --root - --link-count 10 --out chain.ss
 sss_chain validate --root secret.txt --in chain.ssc
 ```
 
-See `man/sss_chain.1` and `completions/sss_chain.bash`.
+See `man/sss_chain.1` and shell completions in `completions/` (bash, zsh, fish, PowerShell).
 
 ---
 

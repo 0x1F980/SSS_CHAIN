@@ -26,9 +26,11 @@ There is **no** `ExactChainBytes` policy. Root is normalized to `link_byte_len` 
 
 2. **"Chain length reveals password size"** — Published links do **not** encode original root length. Only normalized anchor material appears in `link_0`.
 
-3. **"Infinite CPU breaks ITS"** — Layer 1 holds against unbounded algebra. Layer 2 fails if root is guessed — use strong roots/KDF at consumer.
+3. **"Infinite CPU breaks ITS"** — Layer 1 holds against unbounded algebra. Layer 2 fails if root is guessed — use strong roots and ITS wire seal at consumers (not Argon2 hot path).
 
-4. **"Crate validates TRNG"** — No. Opaque bytes only.
+4. **"Timelock L2 is hash-one-way"** — L2 is **SSS underbestemmelse** (backward ambiguity), not computational hash hardness. RSW L1 squaring is delay aux only.
+
+5. **"Crate validates TRNG"** — No. Opaque bytes only.
 
 ---
 

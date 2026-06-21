@@ -8,6 +8,8 @@
 | Epoch step forward | `sss_chain_epoch.rs` | Forward secrecy |
 | OTM chain helpers | `sss_chain_otm.rs` | Attestation binding |
 
+**Lean (in-repo):** [mathematics/Epoch/StepForward.lean](mathematics/Epoch/StepForward.lean)
+
 **Consumers:** ITS-asymmetric (epoch FS), ITS-OTM, ITS-timelock — all delegate chaining algebra here.
 
 **Tests:** `cargo test` in SSS_CHAIN  
