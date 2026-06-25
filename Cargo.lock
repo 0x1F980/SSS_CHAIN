@@ -72,15 +72,11 @@ dependencies = [
 ]
 
 [[patch.unused]]
-name = "its_self_enclosed_timelock"
-version = "0.1.0"
-
-[[patch.unused]]
 name = "its_hardware"
 version = "0.1.0"
 
 [[patch.unused]]
-name = "its_otm_public_attestation"
+name = "its_self_enclosed_timelock"
 version = "0.1.0"
 
 [[patch.unused]]
@@ -98,3 +94,7 @@ version = "0.8.1"
 [[patch.unused]]
 name = "its_ledger"
 version = "1.1.0"
+
+[[patch.unused]]
+name = "its_otm_public_attestation"
+version = "0.1.0"
