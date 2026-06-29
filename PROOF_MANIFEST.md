@@ -1,5 +1,7 @@
 # SSS_CHAIN — Proof manifest (v1.0.0)
 
+## License: GNU GPLv3 Only
+
 | Concern | Implementation | Layer |
 |---------|----------------|-------|
 | M31/M61 field arithmetic | `sss_chain_field.rs` | Algebra |

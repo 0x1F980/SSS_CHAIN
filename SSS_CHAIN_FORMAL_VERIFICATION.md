@@ -1,5 +1,7 @@
 # SSS_CHAIN — formal verification status
 
+## License: GNU GPLv3 Only
+
 ## Library (Rust)
 
 | Property | Status | Evidence |

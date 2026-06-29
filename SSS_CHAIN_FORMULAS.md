@@ -1,5 +1,7 @@
 # SSS_CHAIN canonical formulas
 
+## License: GNU GPLv3 Only
+
 | Symbol | Definition | Rust |
 |--------|------------|------|
 | $p$ | $2^{31}-1$ (M31) | `MODULUS` |

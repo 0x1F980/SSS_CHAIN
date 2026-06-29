@@ -1,6 +1,12 @@
 # SSS_CHAIN: Shared SSS-Chaining Link API Portal
 
-## License: GNU GPLv3 Only
+## GNU General Public License v3.0 Only
+Copyright (C) 2026 0x1F980. All rights reserved.
+
+SSS_CHAIN is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, **version 3 of the License only** (not later versions).
+
+**No MIT/Apache dual licensing.** Commercial use is permitted only under GPL-3.0 obligations (source availability, license propagation, and copyleft). See [LICENSE](LICENSE) and [RELICENSING.md](RELICENSING.md).
+
 ## Target: Cryptographers, Security Auditors, Integrators
 
 **ITS = Information-Theoretic Secrecy** — [ecosystem definition](https://github.com/0x1F980/ITS-ROUTING/blob/master/ITS_ECOSYSTEM.md#its--information-theoretic-secrecy). SSS_CHAIN is the shared algebra underlying ITS wire, OTM, and timelock layers.
