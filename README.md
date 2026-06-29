@@ -58,7 +58,7 @@ sss_chain demo
 
 0. **[Security Layers](SSS_CHAIN_SECURITY_LAYERS.md)** — ITS vs root; no chain-length root policy.
 1. **[Vision](SSS_CHAIN_vision.md)** — Purpose, Eve model, ecosystem role.
-2. **[Mathematics](SSS_CHAIN_mathematics.md)** — k=2 underdetermination; hash comparison.
+2. **[Mathematics](SSS_CHAIN_mathematics.md)** — §0.1 worked example; standard notation; postulates; transition theorems; confirm/reject checklist.
 3. **[Manual](SSS_CHAIN_manual.md)** — Rust API, `sss_chain` CLI, Docker/Nix, man page.
 4. **[Troubleshooting](SSS_CHAIN_troubleshooting.md)** — `.ssc`, arrange, M61 mismatch.
 5. **[Use-Cases](SSS_CHAIN_usecase.md)** — Pipes, OTM/timelock integration.
